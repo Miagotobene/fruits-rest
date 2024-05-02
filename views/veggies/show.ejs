@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veggies</title>
+</head>
+<body>
+    <h1><%= veg.name %></h1>
+    <p>Color: <%= veg.color %></p>
+    <% if (veg.readyToEat) { %>
+        <p>Ready to Eat 👍🏽</p>
+    <% } else { %>
+        <p>Not Ready to Eat 👎🏽</p>
+    <% } %>
+
+    <a href="/veggies">Go Back...</a>
+</body>
+</html>

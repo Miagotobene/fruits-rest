@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+</head>
+<body>
+    <h1><%= recipe.name %></h1>
+    <p>Main Ingredient: <%= recipe.ingredient %></p>
+    <% if (recipe.preptime) { %>
+        <p>Takes about 30 minutes 👍🏽</p>
+    <% } else { %>
+        <p>Takes more than half an hour👎🏽</p>
+    <% } %>
+
+    <a href="/recipes">Go Back...</a>
+</body>
+</html>
